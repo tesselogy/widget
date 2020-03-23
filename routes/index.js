@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var ForgeSDK = require('forge-api-fm-pm');
+var ForgeSDK = require('forge-apis');
 var oAuth = require("../tools/0Auth");
 
 /* GET home page. */

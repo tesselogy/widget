@@ -3,7 +3,7 @@
  */
 var express = require('express');
 var router = express.Router();
-var ForgeSDK = require('forge-api-fm-pm');
+var ForgeSDK = require('forge-apis');
 var oAuth2 = require("../tools/0Auth");
 
 /* GET authorided by ADSK page. */
