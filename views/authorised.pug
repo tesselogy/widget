@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1= title
+    if name
+        p Welcome #{name}
+    else
+        p Welcome my Frend
+    p #{text}
+    p ThreeLegged token
+    p #{credentials}

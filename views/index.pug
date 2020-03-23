@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  script(src="https://developer.api.autodesk.com/modelderivative/v2/viewers/three.min.js")
+  script(src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js")
+  link(rel='stylesheet', href='https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css')
+  link(rel='stylesheet', href='/stylesheets/style.css')
+  img(src='https://s3-eu-west-1.amazonaws.com/ibimcdn/images/lg.png')
+  div.container
+    h1.headertext.text-right.headerblock Подключение к BIM360
+    a.badge.badge-primary(href=url4adsk) Авторизоваться
+    div.row
+      div.col-8
+        p Аналитика по проектам B360
+      div.col-4
+        blockquote.blockquote
+          p.mb-0 "У семи девелоперов, дитя без финансирования"
+          footer.blockquote-footer Шон Пе

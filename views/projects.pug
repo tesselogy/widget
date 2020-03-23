@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    div.container
+        h1.headertext.text-right Перечень проектов
+        div.list-group
+            each item, i in data
+                a.list-group-item.list-group-item-action(id=i,href='/dashboard?id='+i)= 'Проект BIM360 ' + item.attributes.name

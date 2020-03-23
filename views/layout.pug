@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+
+  body
+    block link
+      - var selected = '';
+       - var menu = menuconst;
+    div.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand="IBIM360"
+      button(type="button" data-toggle="collapse" data-target="#navbarResponsive").navbar-toggler
+        span.navbar-toggler-icon
+      div.navbar-collapse.collapse#navbarResponsive
+        ul.navbar-nav(style="padding-left:30px")
+          each val, key in menu
+            if selected === key
+              li.nav-item
+                a.nav-link.link-menu.active(href=val, title=key)= key
+                span.caret
+            else
+              li.nav-item
+                a.nav-link.link-menu(href=val, title=key)= key
+                span.caret
+        if firstName
+          span.navbar-text #{firstName}
+    block content

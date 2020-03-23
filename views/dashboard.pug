@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    div.container
+        h1.headertext.text-right
+        div.list-group
+            each item, i in data
+                if (item.type=='quality_issues')
+                    a.list-group-item.list-group-item-action(id=i,href='/issue?id='+i)= 'Заголовок' + item.attributes.title
