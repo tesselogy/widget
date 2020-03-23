@@ -2,7 +2,7 @@
  * Created by ELEMIAN on 01.05.2019.
  */
 var ForgeSDK = require('forge-apis');
-var CLIENT_ID = 'D2dLeYAGs562pjmEXFvAIq10qiuLVR63', CLIENT_SECRET = 'yMyxGeh8zqORDFhS', REDIRECT_URL = 'https://ibim360.herokuapp.com/forgecallback';
+var CLIENT_ID = 'R6ntaFqrC38B2jaxuRQ2ZXvozMcVG5pn', CLIENT_SECRET = '3IIUdshZboIYtPs6', REDIRECT_URL = 'https://abslt.herokuapp.com/forgecallback';
 
 // Initialize the 3-legged OAuth2 client, set specific scopes and optionally set the `autoRefresh` parameter to true
 // if you want the token to auto refresh
