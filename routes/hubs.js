@@ -15,7 +15,7 @@ router.get('/', function(req, res) {
             //console.log('req obj after HubsApi' + JSON.stringify(hubs.body.data));
             req.session.data = {breadcrumbs:{hub:Number,project:Number},hubs:{},projects:{}};
             req.session.data.hubs = hubs.body.data;
-            //console.log('Hubs data ' + typeof(hubs.body.data));
+            console.log('Hubs data ' + typeof(hubs.body.data));
             res.render('hubs', {data: hubs.body.data, title: 'HUB-s'});
         }, function(err){
             console.error('error in 3legged' + err);
