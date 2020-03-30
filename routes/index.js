@@ -6,7 +6,7 @@ var oAuth = require("../tools/0Auth");
 /* GET home page. */
 router.get('/', function(req, res) {
   if(req.session.credentials!=undefined){
-    console.log ("cred - ", req.session.credentials);
+    console.log ("cred - ", req.session.credentials, req.session.credentials2);
     var User = new ForgeSDK.UserProfileApi;
     User.getUserProfile(oAuth,req.session.credentials).then(function(profile){
       //console.log(profile);
